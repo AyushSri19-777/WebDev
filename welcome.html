@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Welcome to our Campus</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body style="background-image: url(cit1.png); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; ">
+        <div style="margin: 300px; background-color: white; opacity: 0.6; text-align: center; width: fit-content;  ">
+        <h3>Citrix Demo Campus</h3>
+        <button id="login" class="btn btn-primary" name="login" type="button" onclick="login()">Login</button>
+        <button id="signup" class="btn btn-primary" name="signup" type="button" onclick="signup()">SignUp</button>
+        </div>
+    </body>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function login()
+        {
+            window.location.href='/Users/ayushsr/Downloads/Project2WebDev/login.html'
+        }
+        function signup()
+        {
+            window.location.href= '/Users/ayushsr/Downloads/Project2WebDev/registration.html'
+        }
+    </script>
+</html>

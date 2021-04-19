@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            div.transparent
+                {
+                    margin-left: 300px;
+                    margin-right: 300px;
+                    background-color: #ffffff;
+                    opacity: 0.6;
+                    font-weight: bolder;
+                    padding: 20px;
+                    
+            }
+            div.background{
+                background-image: url(bglog.jpg);                
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Here</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+</head> 
+<div class="background">
+<div class="transparent" >
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="POST" id="myForm">
+        Name: <input type="text" name="fname"><br><br>
+        Registration Number(This will be your username): <input type="text" name="regno"><br><br>
+        Password:<input type="text" id="pwd"> <br><br>
+        Retype Password:<input type="text" id="repwd"><br> <br>
+        Address: <input type="text" name="addr" maxlength="70"><br><br>
+        Phone Number: <input type="text" name="reg"> <br><br>
+        Email: <input type="text" name="email"><br><br>
+        <b>What did you like most about the campus?</b><br>
+        <input type="checkbox" name="st" value="Students"> Students<br>
+        <input type="checkbox" name="loc" value="Location"> Location<br>
+        <input type="checkbox" name="cmp" value="Campus"> Campus<br>
+        <input type="checkbox" name="atm" value="atm"> Atmosphere<br>
+        <input type="checkbox" name="drm" value="dorm"> Dorm Rooms<br>
+        <input type="checkbox" name="sprt" value="Sports" > Sports<br>
+        <b>How did you become interested in this University?</b><br>
+        <p>
+        <input type="radio" name="r1" value="v1"> Friends<br>
+        <input type="radio" name="r1" value="v2"> Television<br>
+        <input type="radio" name="r1" value="v3"> Internet<br>  
+        <input type="radio" name="r1" value="v4"> Other<br>
+        </p>
+        Additional Comments:<br/>
+        <textarea name="comments" rows="6" cols="60"></textarea><br><br>
+    </div>
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-success" style="margin: 10px;">Submit</button>
+        <button type="button" class="btn btn-warning" onclick="clearT()">Reset</button>
+    </div>
+    </form>
+</div>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function clearT(){
+            document.getElementById("myForm").reset();
+        }
+
+    </script>
+
+</html>

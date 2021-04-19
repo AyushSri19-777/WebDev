@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Login to our Campus Portal</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"  >
+    </head>
+    <body style="background-image: url(cit1.png);background-position: center; background-repeat: no-repeat; background-size: cover; " >
+        <div style="margin-top:200px; background-color:white;opacity:0.6;width:fit-content;margin-right: 10%;margin-left: 60%; ">
+        <div>
+        <p style="padding-left: 50px; padding-right:50px ; background-color:blue ; color:white;font-size:120% ;">Sign in to your account</p> <br><br>
+        <form action="GET" id="form2" style="padding: 10px;" >
+            <input type="text" name="username" placeholder="Username"> <br> <br>
+            <input type="password" name="pwd" id="pwd" placeholder="Password"> <br> <br>
+            <button type="button" id="login1" onClick="check()">Login</button>
+        </form>
+        </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function check()
+        {
+            alert("Success!!");
+        }
+    </script>
+</html>
